@@ -11,7 +11,7 @@ def setup():
     global x4
     global y4
     global rad
-    rad=50
+    rad=10
     x1=height/2
     y1=width/2
     x2=height/2
@@ -49,7 +49,11 @@ def draw():
     circle(x4,y4,rad)
     x4+=1
     y4+=1
-    rad-=1
+    if x1<100:
+        rad +=1
+        
+    else:
+        rad -=1
     
 
     
